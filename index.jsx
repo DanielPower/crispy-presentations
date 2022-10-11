@@ -61,7 +61,6 @@ export const usePresentationStore = createStore({
 
 export const usePresentationKeybinds = () => {
   const handlePresentationKeyboardEvents = (event) => {
-    console.log(document.activeElement.tagName);
     if (document.activeElement.tagName === "INPUT") {
       return;
     }
